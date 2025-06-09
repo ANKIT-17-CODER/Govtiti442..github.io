@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Achievements - Government ITI, Kasia, Kushinagar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #ffffff);
+        }
+
+        .achievements-section {
+            background: linear-gradient(to right, #319795, #1A365D);
+            color: white;
+            padding: 3rem 1rem;
+            min-height: 100vh;
+        }
+
+        .achievements-section h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .achievement-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #333;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .achievement-card h5 {
+            font-size: 1.2rem;
+            color: #002147;
+            margin-bottom: 0.5rem;
+        }
+
+        .achievement-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .achievement-icon {
+            font-size: 2rem;
+            color: #0ca750;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            .achievements-section {
+                padding: 2rem 0.5rem;
+            }
+
+            .achievements-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .achievement-card h5 {
+                font-size: 1rem;
+            }
+
+            .achievement-card p {
+                font-size: 0.85rem;
+            }
+
+            .achievement-icon {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .achievement-card {
+                padding: 2rem;
+            }
+
+            .achievements-section h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Footer styling consistent with main site */
+        .custom-footer {
+            background-color: #002147;
+            color: white;
+            padding-top: 2rem;
+        }
+
+        .custom-footer h5 {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .custom-footer p,
+        .custom-footer a {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .custom-footer a:hover {
+            color: #0ca750;
+            text-decoration: none;
+        }
+
+        .footer-divider {
+            border-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header (Copied from index.html) -->
+    <header class="border-bottom py-2 mb-4 text-white" style="background-color: #002147;">
+        <div class="container d-flex flex-column flex-md-row align-items-center gap-3">
+            <img src="mlogo.png" alt="College Logo" class="college-logo img-fluid" style="max-width: 100px;">
+            <div class="flex-grow-1 text-center text-md-start">
+                <h2 class="college-name mb-2 fs-4 fs-md-2">Government ITI, Kasia, Kushinagar (Male) [442]</h2>
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav nav-tabs flex-column flex-lg-row w-100">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#"
+                                    role="button">About Us</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="overview.html">Our College</a></li>
+                                    <li><a class="dropdown-item active" href="achievements.html">Achievements</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="principal-message.html">Principal Message</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                    role="button">Trade</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="electrician/electrician1.html">Electrician</a></li>
+                                    <li><a class="dropdown-item" href="fitter/fitter.html">Fitter</a></li>
+                                    <li><a class="dropdown-item" href="welder/welder.html">Welder</a></li>
+                                    <li><a class="dropdown-item" href="wireman/wireman.html">Wireman</a></li>
+                                    <li><a class="dropdown-item" href="plumber/plumber.html">Plumber</a></li>
+                                    <li><a class="dropdown-item" href="turner/turner.html">Turner</a></li>
+                                    <li><a class="dropdown-item" href="RAC/rac.html">Refrigeration and Air Conditioning
+                                            Technician</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                    role="button">Admission</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="admission.html">Apply Now</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                    role="button">Instructor</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="instructor.html">Our Team</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="fees.html">Fees Structure</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <img src="logoo.png" alt="Skill India Logo" class="skill-india-logo img-fluid"
+                style="max-width: 100px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">
+            <div class="floating-btn-container d-flex gap-2">
+                <a href="https://wa.me/919876543210"
+                    class="floating-btn whatsapp-float btn btn-success btn-sm rounded-circle" title="Chat on WhatsApp"
+                    target="_blank">
+                    <i class="fab fa-whatsapp fs-5"></i>
+                </a>
+                <a href="tel:+919876543210" class="floating-btn call-float btn btn-primary btn-sm rounded-circle"
+                    title="Call Us">
+                    <i class="bi bi-telephone-fill fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section">
+        <div class="container">
+            <h2>Our Achievements</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="achievement-card">
+                        <i class="bi bi-trophy-fill achievement-icon"></i>
+                        <h5>95% Placement Rate in 2024</h5>
+                        <p>Our graduates secured jobs in top industries, with 95% of the 2024 batch placed in companies like Tata Motors, L&T, and local MSMEs within six months of course completion.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="achievement-card">
+                        <i class="bi bi-award-fill achievement-icon"></i>
+                        <h5>Best ITI Award 2023</h5>
+                        <p>Recognized as the "Best ITI in Uttar Pradesh" by the State Council for Technical Education & Vocational Training for excellence in training and infrastructure.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="achievement-card">
+                        <i class="bi bi-building-fill achievement-icon"></i>
+                        <h5>Modern Workshop Upgradation</h5>
+                        <p>Upgraded our Electrician and Fitter workshops in 2024 with state-of-the-art equipment under the STRIVE project, enhancing hands-on training quality.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="achievement-card">
+                        <i class="bi bi-person-check-fill achievement-icon"></i>
+                        <h5>Student Excellence in National Competitions</h5>
+                        <p>Our students won 3 gold medals in the 2024 Skill India Competition for Electrician and Welder trades at the regional level.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="achievement-card">
+                        <i class="bi bi-gear-fill achievement-icon"></i>
+                        <h5>Industry Partnerships</h5>
+                        <p>Established MoUs with 10 local industries in 2024 for apprenticeship programs, ensuring real-world training and job opportunities for students.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="achievement-card">
+                        <i class="bi bi-book-fill achievement-icon"></i>
+                        <h5>100% Pass Rate in AITT</h5>
+                        <p>Achieved a 100% pass rate in the All India Trade Test (AITT) for the 2023-24 session across all trades, reflecting our commitment to quality education.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Copied from index.html) -->
+    <footer class="custom-footer pt-4 mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start g-3">
+                <div class="col-12 col-md-4 mb-4">
+                    <h5>Location</h5>
+                    <p>
+                        <a href="location.html" class="footer-link">
+                            <i class="bi bi-geo-alt-fill me-1"></i> Our Location
+                        </a>
+                    </p>
+                    <p>
+                        <i class="bi bi-building me-1"></i> GR09901151-Government Industrial Training Institute, Kasia,
+                        (Male) Bhaisha Post-Hetimpur Kushinagar, UTTAR PRADESH 274402
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5>Complaint Box</h5>
+                    <form id="complaintForm">
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Write your complaint here..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5>Enquiry</h5>
+                    <a href="enquiry.html" class="btn btn-success w-100 mt-2">Enquire Now</a>
+                </div>
+                <hr class="footer-divider">
+                <div class="text-center pb-3">
+                    <p class="mb-0">© 2025 Govt ITI College | All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

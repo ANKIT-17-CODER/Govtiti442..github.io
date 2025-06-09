@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ITI Fees Structure</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fffde7); /* Matches principal-message.html, gallery.html, electrician.html, fitter.html, welder.html, wireman.html, plumber.html, turner.html, rac.html, contact.html */
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    .fees-heading {
+      display: inline-block;
+      background-color: #007d6e;
+      color: #f1eee2;
+      font-size: 1.8rem;
+      padding: 10px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      margin: 0 auto 30px;
+      text-align: center;
+      animation: fadeInDown 0.8s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .table-dark-custom {
+      background-color: #26263c;
+      border-color: #3b3b5f;
+    }
+
+    .table-dark-custom thead th {
+      background-color: #007d6e;
+      color: rgb(250, 251, 253);
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .table-dark-custom tbody tr {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .table-dark-custom tbody tr:hover {
+      background-color: #333354;
+      color: #00ffcc;
+    }
+
+    .table-dark-custom td,
+    .table-dark-custom th {
+      text-align: center;
+      vertical-align: middle;
+      color: #0b5d83;
+    }
+
+    .table-dark-custom td:first-child {
+      color: #cfa90d;
+      font-weight: 600;
+    }
+
+    .table-responsive {
+      animation: fadeInUp 1s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer consistency */
+    .custom-footer {
+      background-color: #002147;
+      color: white;
+      padding-top: 2rem;
+      margin-top: 2rem;
+    }
+
+    .custom-footer h5 {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    .custom-footer p,
+    .custom-footer a {
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    .custom-footer a:hover {
+      color: #0ca750;
+      text-decoration: none;
+    }
+
+    .footer-divider {
+      border-color: #444;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header (Copied from main page) -->
+  <header class="border-bottom py-2 mb-4 text-white" style="background-color: #002147;">
+    <div class="container d-flex flex-column flex-md-row align-items-center gap-3">
+      <img src="mlogo.png" alt="College Logo" class="college-logo img-fluid" style="max-width: 100px;">
+      <div class="flex-grow-1 text-center text-md-start">
+        <h2 class="college-name mb-2 fs-4 fs-md-2">Government ITI, Kasia, Kushinagar (Male) [442]</h2>
+        <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-tabs flex-column flex-lg-row w-100">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">About Us</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="overview.html">Our College</a></li>
+                  <li><a class="dropdown-item active" href="achievements.html">Achievements</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="principal-message.html">Principal Message</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Trade</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="electrician/electrician1.html">Electrician</a></li>
+                  <li><a class="dropdown-item" href="fitter/fitter.html">Fitter</a></li>
+                  <li><a class="dropdown-item" href="welder/welder.html">Welder</a></li>
+                  <li><a class="dropdown-item" href="wireman/wireman.html">Wireman</a></li>
+                  <li><a class="dropdown-item" href="plumber/plumber.html">Plumber</a></li>
+                  <li><a class="dropdown-item" href="turner/turner.html">Turner</a></li>
+                  <li><a class="dropdown-item" href="RAC/rac.html">Refrigeration and Air Conditioning Technician</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Admission</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="admission.html">Apply Now</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Instructor</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="instructor.html">Our Team</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="fees.html">Fees Structure</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <img src="logoo.png" alt="Skill India Logo" class="skill-india-logo img-fluid"
+        style="max-width: 100px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">
+      <div class="floating-btn-container d-flex gap-2">
+        <a href="https://wa.me/919876543210" class="floating-btn whatsapp-float btn btn-success btn-sm rounded-circle"
+          title="Chat on WhatsApp" target="_blank">
+          <i class="fab fa-whatsapp fs-5"></i>
+        </a>
+        <a href="tel:+919876543210" class="floating-btn call-float btn btn-primary btn-sm rounded-circle" title="Call Us">
+          <i class="bi bi-telephone-fill fs-5"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container my-5 text-center">
+    <div class="fees-heading">Fees Structure</div>
+
+    <div class="table-responsive mt-4">
+      <table class="table table-bordered table-dark-custom table-striped">
+        <thead>
+          <tr>
+            <th>Trade</th>
+            <th>Course Fee<br>First Year</th>
+            <th>Course Fee<br>Second Year</th>
+            <th>CBT & Practical<br>Exam Fee</th>
+            <th>Total Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Electrician</td>
+            <td>₹ 480</td>
+            <td>₹ 480</td>
+            <td>₹ 560</td>
+            <td>₹ 1,520</td>
+          </tr>
+          <tr>
+            <td>Fitter</td>
+            <td>₹ 480</td>
+            <td>₹ 480</td>
+            <td>₹ 560</td>
+            <td>₹ 1,520</td>
+          </tr>
+          <tr>
+            <td>Welder</td>
+            <td>₹ 480</td>
+            <td>-</td>
+            <td>₹ 560</td>
+            <td>₹ 1,040</td>
+          </tr>
+          <tr>
+            <td>Wireman</td>
+            <td>₹ 480</td>
+            <td>₹ 480</td>
+            <td>₹ 560</td>
+            <td>₹ 1,520</td>
+          </tr>
+          <tr>
+            <td>Plumber</td>
+            <td>₹ 480</td>
+            <td>-</td>
+            <td>₹ 560</td>
+            <td>₹ 1,040</td>
+          </tr>
+          <tr>
+            <td>Turner</td>
+            <td>₹ 480</td>
+            <td>₹ 480</td>
+            <td>₹ 560</td>
+            <td>₹ 1,520</td>
+          </tr>
+          <tr>
+            <td>Refrigeration and Air Conditioning Technician</td>
+            <td>₹ 480</td>
+            <td>₹ 480</td>
+            <td>₹ 560</td>
+            <td>₹ 1,520</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer (Copied from main page) -->
+  <footer class="custom-footer pt-4 mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start g-3">
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Location</h5>
+          <p><a href="location.html" class="footer-link">Our Location</a></p>
+          <p>GR09901151-Government Industrial Training Institute, Kasia, (Male) Bhaisha Post-Hetimpur Kushinagar, UTTAR PRADESH 274402</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Complaint Box</h5>
+          <form id="complaintForm">
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Write your complaint here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Enquiry</h5>
+          <a href="enquiry.html" class="btn btn-success w-100 mt-2">Enquire Now</a>
+        </div>
+        <hr class="footer-divider">
+        <div class="text-center pb-3">
+          <p class="mb-0">© 2025 Govt ITI College | All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

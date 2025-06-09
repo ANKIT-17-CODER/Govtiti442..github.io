@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Overview - Govt ITI College</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Matches admission.html */
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-heading {
+      font-size: 2.5rem; /* Adjusted for mobile */
+      text-align: center;
+      font-weight: 600;
+      color: #002147; /* Consistent with main page */
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro-text {
+      font-size: 1rem;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      color: #333; /* Consistent with other pages */
+    }
+
+    .card-box {
+      background-color: #fff;
+      padding: 1.5rem; /* Reduced for mobile */
+      border-radius: 12px; /* Consistent with other pages */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1.5rem;
+    }
+
+    .card-box h2 {
+      font-weight: 600;
+      color: #002147; /* Consistent with main page */
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.6rem; /* Adjusted for mobile */
+    }
+
+    .card-box ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .card-box ul li {
+      padding: 0.5rem 0;
+      font-size: 0.95rem; /* Slightly smaller for mobile */
+      color: #333;
+    }
+
+    .card-box ul li::before {
+      content: "✔️ ";
+      color: #0ca750; /* Consistent with main page hover color */
+      margin-right: 8px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 576px) {
+      .hero-heading {
+        font-size: 1.8rem;
+      }
+
+      .card-box {
+        padding: 1rem;
+      }
+
+      .card-box h2 {
+        font-size: 1.4rem;
+      }
+
+      .intro-text, .card-box ul li {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Footer consistency */
+    .custom-footer {
+      background-color: #002147;
+      color: white;
+      padding-top: 2rem;
+      margin-top: 2rem;
+    }
+
+    .custom-footer h5 {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    .custom-footer p, .custom-footer a {
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    .custom-footer a:hover {
+      color: #0ca750;
+      text-decoration: none;
+    }
+
+    .footer-divider {
+      border-color: #444;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header (Copied from main page) -->
+  <header class="border-bottom py-2 mb-4 text-white" style="background-color: #002147;">
+    <div class="container d-flex flex-column flex-md-row align-items-center gap-3">
+      <img src="mlogo.png" alt="College Logo" class="college-logo img-fluid" style="max-width: 100px;">
+      <div class="flex-grow-1 text-center text-md-start">
+        <h2 class="college-name mb-2 fs-4 fs-md-2">Government ITI, Kasia, Kushinagar (Male) [442]</h2>
+        <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-tabs flex-column flex-lg-row w-100">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button">About Us</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="overview.html">Our College</a></li>
+                  <li><a class="dropdown-item active" href="achievements.html">Achievements</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="principal-message.html">Principal Message</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Trade</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="electrician/electrician1.html">Electrician</a></li>
+                  <li><a class="dropdown-item" href="fitter/fitter.html">Fitter</a></li>
+                  <li><a class="dropdown-item" href="welder/welder.html">Welder</a></li>
+                  <li><a class="dropdown-item" href="wireman/wireman.html">Wireman</a></li>
+                  <li><a class="dropdown-item" href="plumber/plumber.html">Plumber</a></li>
+                  <li><a class="dropdown-item" href="turner/turner.html">Turner</a></li>
+                  <li><a class="dropdown-item" href="RAC/rac.html">Refrigeration and Air Conditioning Technician</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Admission</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="admission.html">Apply Now</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Instructor</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="instructor.html">Our Team</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fees.html">Fees Structure</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <img src="logoo.png" alt="Skill India Logo" class="skill-india-logo img-fluid"
+        style="max-width: 100px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">
+      <div class="floating-btn-container d-flex gap-2">
+        <a href="https://wa.me/919876543210" class="floating-btn whatsapp-float btn btn-success btn-sm rounded-circle"
+          title="Chat on WhatsApp" target="_blank">
+          <i class="fab fa-whatsapp fs-5"></i>
+        </a>
+        <a href="tel:+919876543210" class="floating-btn call-float btn btn-primary btn-sm rounded-circle" title="Call Us">
+          <i class="bi bi-telephone-fill fs-5"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="container py-4">
+    <h1 class="hero-heading"><i class="bi bi-building-check"></i> Our College Overview</h1>
+    <p class="intro-text">
+      Welcome to Government ITI College, Kasia Kushinagar — your gateway to skill-based education and industrial success.
+      Our institution offers high-quality technical training in trades like Electrician, Fitter, and Welder to prepare
+      students for future-ready careers.
+    </p>
+
+    <div class="card-box">
+      <h2 class="mb-3">🚀 Vision</h2>
+      <ul>
+        <li>To be a center of excellence in vocational training.</li>
+        <li>Inspire technical mastery and self-reliance.</li>
+        <li>Bridge the gap between education and employability.</li>
+        <li>Foster innovation, confidence, and a skilled workforce.</li>
+      </ul>
+    </div>
+
+    <div class="card-box">
+      <h2 class="mb-3">🎯 Mission</h2>
+      <ul>
+        <li>Provide top-tier training in industrial trades.</li>
+        <li>Develop disciplined, skilled, and job-ready professionals.</li>
+        <li>Promote lifelong learning and sustainability.</li>
+        <li>Encourage safety, innovation, and industry relevance.</li>
+      </ul>
+    </div>
+
+    <div class="card-box">
+      <h2 class="mb-3"><i class="bi bi-lightbulb-fill"></i> Key Highlights</h2>
+      <ul>
+        <li>Government-recognized training programs.</li>
+        <li>Modern workshops and real-world exposure.</li>
+        <li>Dedicated and skilled faculty members.</li>
+        <li>Industrial visits and hands-on projects.</li>
+        <li>Emphasis on personality development and ethics.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer (Copied from main page) -->
+  <footer class="custom-footer pt-4 mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start g-3">
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Location</h5>
+          <p><a href="location.html" class="footer-link">Our Location</a></p>
+          <p>GR09901151-Government Industrial Training Institute, Kasia, (Male) Bhaisha Post-Hetimpur Kushinagar, UTTAR PRADESH 274402</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Complaint Box</h5>
+          <form id="complaintForm">
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Write your complaint here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5>Enquiry</h5>
+          <a href="enquiry.html" class="btn btn-success w-100 mt-2">Enquire Now</a>
+        </div>
+        <hr class="footer-divider">
+        <div class="text-center pb-3">
+          <p class="mb-0">© 2025 Govt ITI College | All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
